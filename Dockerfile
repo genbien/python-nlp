@@ -8,4 +8,7 @@ RUN python -m nltk.downloader $CORPORA
 RUN pip install -U spacy
 RUN python -m spacy download en
 
+RUN mkdir /workspace
+WORKDIR /workspace
+
 CMD ["bash"]
